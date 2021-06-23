@@ -46,18 +46,19 @@ function dynamicList() {
 
 
 
-// build the nav
+// build the nav when calling the function.
 dynamicList();
 
 // Add class 'active' to section when near top of viewport
+//using getboundigclientrect() function
 
 function setActiveClass() {
     for (const sec of allSections) {
         let goal = sec.getBoundingClientRect();
 
-        if (goal.top >= -250 && goal.top <= 500) {
+        if (goal.top >= -150 && goal.top <= 500) {
             sec.classList.add("your-active-class");
-            console.log("Section in the view")
+            //console.log("Section in the view")
         } else { sec.classList.remove("your-active-class") };
     }
 }
@@ -83,9 +84,3 @@ window.addEventListener("scroll", function() {
 // Scroll to section on link click
 
 // Set sections as active
-
-
-const button = document.createElement('div')
-button.setAttribute('class', 'button');
-button.style.cssText("display: none; position: fixed; z-index: 10")
-document.body.appendChild(button);
