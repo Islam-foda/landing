@@ -1,11 +1,17 @@
-# Landing page
- 	What i did.
-	- the view will be perfect on any screen.
-	- define some global variables
-	- make a function with for..of loop to clone sections number and create items in Navigation menu, the li will take the data-nav value from sections to but it as 		inner text.
-	- any time I call the function will do the function.
-	- set up a function to set the active class within the section in the boundig view through for..of loop and getboundigclientrect function.
-	- call the function in event listner to do the required
-	
-
- 
+# Title:
+	* landing-page
+# Description:
+	- Creating a dynamic Unordered list in the Navigation Bar.
+	- Styling the section in the viewport.
+	- Clicking on navigation item make Scroling into correspondig section smoothly.
+	- avilable over all windows platform.
+# Usage Code:
+	# JavaScript:
+		* setting up the global variables.
+		* create Function to build a Dynamic list refer to All sections in the DomTree. and adding event Listener to the list so it can scroll to the desired section when clicking on it.
+		* second Function for observing when the section will be in the viewport by getboundigclientrect() function, and insert IF condition to set a specified class if the section is in the viewport.
+		* calling the second function in an event listener that trigger scrolling
+	# CSS:
+		* adding media query line to adjust the navigation menu on the small screen.
+	# html:
+		* adding one section to check the dynamic list in the navigation bar.
